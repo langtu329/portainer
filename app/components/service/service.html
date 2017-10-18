@@ -20,6 +20,12 @@
 </div>
 
 <div class="row">
+  <div class="col-lg-12 col-md-12 col-xs-12">
+    <div id="service-tasks" class="padding-top" ng-include="'app/components/service/includes/tasks.html'"></div>
+  </div>
+</div>
+
+<div class="row">
   <div class="col-lg-9 col-md-9 col-xs-9">
     <rd-widget>
       <rd-widget-header icon="fa-list-alt" title="Service details"></rd-widget-header>
@@ -165,6 +171,5 @@
     <div id="service-update-config" class="padding-top" ng-include="'app/components/service/includes/updateconfig.html'"></div>
     <div id="service-labels" class="padding-top" ng-include="'app/components/service/includes/servicelabels.html'"></div>
     <div id="service-secrets" ng-if="applicationState.endpoint.apiVersion >= 1.25" class="padding-top" ng-include="'app/components/service/includes/secrets.html'"></div>
-    <div id="service-tasks" class="padding-top" ng-include="'app/components/service/includes/tasks.html'"></div>
   </div>
 </div>
